@@ -5,8 +5,11 @@ import App from './App';
 import Login from './Login';
 import Register from './Register';
 import * as serviceWorker from './serviceWorker';
-import { Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+//import { Route } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 
 ReactDOM.render(
   /*
@@ -15,7 +18,7 @@ ReactDOM.render(
     <Login />
   </React.StrictMode>,
   */
-  <BrowserRouter>
+  <Router>
     <Route path="/" component={App}>
 
     </Route>
@@ -26,7 +29,7 @@ ReactDOM.render(
 
     </Route>
 
-  </BrowserRouter>,
+  </Router>,
   
   document.getElementById('root')
 );
