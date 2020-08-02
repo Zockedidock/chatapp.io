@@ -7,16 +7,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <div id="login">
-          <h1 className="h3 mb-3 font-weight-normal">Login</h1>
-          
-          <input placeholder="Email adress" type="email" id="inputEmail" className="form-control mb-2" required autoFocus/>
-          
-          <input placeholder="Password" type="password" id="inputPassword" className="form-control mb-2" required/>
-
-          <button className="btn btn-lg btn-primary btn-block mt-4" type="submit">
+        <div id="welcome">
+          <h1 className="h3 mb-3 font-weight-normal">Welcome!</h1>
+          <a className="btn btn-lg btn-primary btn-block mt-4" href="/login">
             Login
-          </button>
+          </a>
+          <a className="btn btn-lg btn-primary btn-block mt-4" href="/register">
+            Register
+          </a>
         </div>
       </header>
     </div>
