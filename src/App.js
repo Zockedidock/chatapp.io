@@ -7,17 +7,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div id="login">
+          <h1 className="h3 mb-3 font-weight-normal">Login</h1>
+          
+          <input placeholder="Email adress" type="email" id="inputEmail" className="form-control mb-2" required autoFocus/>
+          
+          <input placeholder="Password" type="password" id="inputPassword" className="form-control mb-2" required/>
+
+          <button className="btn btn-lg btn-primary btn-block mt-4" type="submit">
+            Login
+          </button>
+        </div>
       </header>
     </div>
   );
